@@ -1,0 +1,89 @@
+body {
+    font-family: 'Poppins', sans-serif;font-family: 'Poppins', sans-serif;
+    margin: 2% 10%;
+}
+
+.topic1 {
+    font-weight: 400;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.top {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+}
+.card {
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: grid;
+    padding: 5%;
+}
+
+.first {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.second {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.third {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.fourth {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+img {
+    justify-self: end;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width:1000px) {
+    .top p {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .container {
+        display: grid;
+        grid-template-areas: 
+        "first second fourth"
+        "first third fourth ";
+    }
+
+    .first {
+        grid-area: first;
+        align-self: center;
+    }
+
+    .second {
+        grid-area: second; 
+    }
+
+    .third {
+        grid-area: third;
+    }
+
+    .fourth {
+        grid-area: fourth;
+        align-self: center;
+    }
+}
